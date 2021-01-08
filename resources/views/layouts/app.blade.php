@@ -19,7 +19,7 @@
             color: #000;
         }
         
-        .item1{ grid-area: status; }
+        .item1{ grid-area: status; width:10px; }
         .item2{ grid-area: nombre; }
         .item3{ grid-area: descripcion; }
 
@@ -44,6 +44,10 @@
             .ver{
                 display: block !important;
             }
+
+            .item1{
+                width: 200px;
+            }
         }
     </style>
 </head>
@@ -62,7 +66,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/home') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
